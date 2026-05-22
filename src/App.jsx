@@ -720,30 +720,42 @@ export default function App() {
           </div>
 
           <div className="mt-14 text-stone-500">
-            <div className="grid md:grid-cols-3 gap-6 mb-14">
+           <div className="mt-24">
 
-  <div className="bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur">
-    <div className="text-4xl mb-4">⭐</div>
-    <h3 className="text-xl font-bold mb-2">Trusted by Guests</h3>
-    <p className="text-stone-300 leading-7">
-      Guests enjoy the perfect location, modern apartment and relaxing atmosphere near the beach.
-    </p>
-  </div>
+  <p className="text-sm font-semibold tracking-[0.25em] uppercase text-amber-500 mb-4">
+    Guest Reviews
+  </p>
 
-  <div className="bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur">
-    <div className="text-4xl mb-4">🔒</div>
-    <h3 className="text-xl font-bold mb-2">Secure Booking</h3>
-    <p className="text-stone-300 leading-7">
-      Booking requests are handled directly and securely with personal confirmation.
-    </p>
-  </div>
+  <h2 className="text-4xl md:text-5xl font-bold mb-12">
+    What Guests Say
+  </h2>
 
-  <div className="bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur">
-    <div className="text-4xl mb-4">🏖️</div>
-    <h3 className="text-xl font-bold mb-2">Perfect Location</h3>
-    <p className="text-stone-300 leading-7">
-      Located only 80 meters from Playa del Cura with restaurants and shops nearby.
-    </p>
+  <div className="grid md:grid-cols-3 gap-6">
+
+    <div className="bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur">
+      <div className="text-yellow-400 text-2xl mb-4">★★★★★</div>
+      <p className="text-stone-300 leading-7 mb-6">
+        “Perfect location near the beach. Very clean apartment and amazing communication.”
+      </p>
+      <div className="font-bold text-white">— Emma, Sweden</div>
+    </div>
+
+    <div className="bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur">
+      <div className="text-yellow-400 text-2xl mb-4">★★★★★</div>
+      <p className="text-stone-300 leading-7 mb-6">
+        “Beautiful apartment and modern interior. We loved staying here.”
+      </p>
+      <div className="font-bold text-white">— Carlos, Spain</div>
+    </div>
+
+    <div className="bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur">
+      <div className="text-yellow-400 text-2xl mb-4">★★★★★</div>
+      <p className="text-stone-300 leading-7 mb-6">
+        “Excellent stay. Close to restaurants and only 1 minute from the beach.”
+      </p>
+      <div className="font-bold text-white">— Sophie, Netherlands</div>
+    </div>
+
   </div>
 
 </div>
