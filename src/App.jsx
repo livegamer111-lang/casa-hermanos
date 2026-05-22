@@ -6,23 +6,26 @@ export default function App() {
   const [checkIn, setCheckIn] = useState(null);
   const [checkOut, setCheckOut] = useState(null);
   const [bookingSent, setBookingSent] = useState(false);
-  useEffect(() => {
-  window.googleTranslateElementInit = () => {
-    new window.google.translate.TranslateElement(
-      {
-        pageLanguage: "en",
-        includedLanguages: "en,nl,es,sv,ar,uk,pl,de",
-      },
-      "google_translate_element"
-    );
-  };
 
-  const script = document.createElement("script");
-  script.src =
-    "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-  script.async = true;
-  document.body.appendChild(script);
-}, []);
+  useEffect(() => {
+    window.googleTranslateElementInit = () => {
+      new window.google.translate.TranslateElement(
+        {
+          pageLanguage: "en",
+          includedLanguages: "en,nl,es,sv,ar,uk,pl,de",
+          autoDisplay: false,
+        },
+        "google_translate_element"
+      );
+    };
+
+    const script = document.createElement("script");
+    script.src =
+      "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
   const [bookingForm, setBookingForm] = useState({
     name: "",
     email: "",
@@ -30,6 +33,15 @@ export default function App() {
     guests: "2",
     message: "",
   });
+
+  const changeLanguage = (lang) => {
+    const select = document.querySelector(".goog-te-combo");
+
+    if (select) {
+      select.value = lang;
+      select.dispatchEvent(new Event("change"));
+    }
+  };
 
   const monthName = currentDate.toLocaleString("en-US", {
     month: "long",
@@ -44,9 +56,7 @@ export default function App() {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
-  const bookedDates = [
- 
-  ];
+  const bookedDates = [];
 
   const formatDateKey = (date) => {
     const y = date.getFullYear();
@@ -68,10 +78,9 @@ export default function App() {
 
   const isClosedDate = (day) => isPastDate(day) || isBookedDate(day);
 
-const getPriceForDate = (date) => {
-  return 85;
-};
-
+  const getPriceForDate = () => {
+    return 85;
+  };
 
   const getPrice = (day) => {
     const date = new Date(year, month, day);
@@ -153,43 +162,43 @@ const getPriceForDate = (date) => {
     return date > checkIn && date < checkOut;
   };
 
-const handleBookingSubmit = async (event) => {
-  event.preventDefault();
+  const handleBookingSubmit = async (event) => {
+    event.preventDefault();
 
-  const response = await fetch("https://formspree.io/f/mredkzvo", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json",
-    },
-    body: JSON.stringify({
-      name: bookingForm.name,
-      email: bookingForm.email,
-      phone: bookingForm.phone,
-      guests: bookingForm.guests,
-      message: bookingForm.message,
-      checkIn: checkIn ? formatDate(checkIn) : "",
-      checkOut: checkOut ? formatDate(checkOut) : "",
-      nights: bookingNights,
-      totalPrice: totalPrice,
-    }),
-  });
-
-  if (response.ok) {
-    setBookingSent(true);
-
-    setBookingForm({
-      name: "",
-      email: "",
-      phone: "",
-      guests: "2",
-      message: "",
+    const response = await fetch("https://formspree.io/f/mredkzvo", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        name: bookingForm.name,
+        email: bookingForm.email,
+        phone: bookingForm.phone,
+        guests: bookingForm.guests,
+        message: bookingForm.message,
+        checkIn: checkIn ? formatDate(checkIn) : "",
+        checkOut: checkOut ? formatDate(checkOut) : "",
+        nights: bookingNights,
+        totalPrice: totalPrice,
+      }),
     });
 
-    setCheckIn(null);
-    setCheckOut(null);
-  }
-};
+    if (response.ok) {
+      setBookingSent(true);
+
+      setBookingForm({
+        name: "",
+        email: "",
+        phone: "",
+        guests: "2",
+        message: "",
+      });
+
+      setCheckIn(null);
+      setCheckOut(null);
+    }
+  };
 
   const heroPhoto = "https://i.imgur.com/R0yGc4Q.jpeg";
 
@@ -227,12 +236,20 @@ const handleBookingSubmit = async (event) => {
         />
         <div className="absolute inset-0 bg-gradient-to-br from-orange-500/20 via-transparent to-cyan-400/20" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/20 to-black/70" />
-<div className="absolute top-6 right-6 z-30">
-  <div
-    id="google_translate_element"
-    className="bg-white/90 backdrop-blur rounded-full px-4 py-2 shadow-2xl"
-  ></div>
-</div>
+
+        <div id="google_translate_element" className="hidden"></div>
+
+        <div className="absolute top-6 right-6 z-30 flex gap-2 bg-white/20 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 shadow-2xl">
+          <button onClick={() => changeLanguage("en")} className="text-xl hover:scale-125 transition">🇬🇧</button>
+          <button onClick={() => changeLanguage("nl")} className="text-xl hover:scale-125 transition">🇳🇱</button>
+          <button onClick={() => changeLanguage("es")} className="text-xl hover:scale-125 transition">🇪🇸</button>
+          <button onClick={() => changeLanguage("de")} className="text-xl hover:scale-125 transition">🇩🇪</button>
+          <button onClick={() => changeLanguage("sv")} className="text-xl hover:scale-125 transition">🇸🇪</button>
+          <button onClick={() => changeLanguage("ar")} className="text-xl hover:scale-125 transition">🇸🇦</button>
+          <button onClick={() => changeLanguage("uk")} className="text-xl hover:scale-125 transition">🇺🇦</button>
+          <button onClick={() => changeLanguage("pl")} className="text-xl hover:scale-125 transition">🇵🇱</button>
+        </div>
+
         <div className="relative z-10 h-full max-w-7xl mx-auto px-6 flex flex-col justify-center items-center text-center">
           <div className="mb-6 rounded-full border border-white/30 bg-white/10 backdrop-blur px-5 py-2 text-white/90 text-sm tracking-[0.35em] uppercase">
             Torrevieja · Spain
