@@ -720,7 +720,33 @@ export default function App() {
           </div>
 
           <div className="mt-14 text-stone-500">
-            © 2026 Casa Hermanos · Torrevieja, Spain
+            <div className="grid md:grid-cols-3 gap-6 mb-14">
+
+  <div className="bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur">
+    <div className="text-4xl mb-4">⭐</div>
+    <h3 className="text-xl font-bold mb-2">Trusted by Guests</h3>
+    <p className="text-stone-300 leading-7">
+      Guests enjoy the perfect location, modern apartment and relaxing atmosphere near the beach.
+    </p>
+  </div>
+
+  <div className="bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur">
+    <div className="text-4xl mb-4">🔒</div>
+    <h3 className="text-xl font-bold mb-2">Secure Booking</h3>
+    <p className="text-stone-300 leading-7">
+      Booking requests are handled directly and securely with personal confirmation.
+    </p>
+  </div>
+
+  <div className="bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur">
+    <div className="text-4xl mb-4">🏖️</div>
+    <h3 className="text-xl font-bold mb-2">Perfect Location</h3>
+    <p className="text-stone-300 leading-7">
+      Located only 80 meters from Playa del Cura with restaurants and shops nearby.
+    </p>
+  </div>
+
+</div>
           </div>
         </div>
       </section>
