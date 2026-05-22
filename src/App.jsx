@@ -37,28 +37,18 @@ const [bookingForm, setBookingForm] = useState({
 });
 
 const changeLanguage = (lang) => {
-  const hostname = window.location.hostname;
-  const currentPath = window.location.pathname + window.location.search;
-
-  document.cookie =
-    "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-  document.cookie =
-    `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=${hostname};`;
-  document.cookie =
-    `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.${hostname};`;
+  const currentPath =
+    window.location.pathname + window.location.search;
 
   if (lang === "en") {
-    window.location.href = currentPath;
+    window.location.href = `${currentPath}#googtrans(en|en)`;
+    window.location.reload();
     return;
   }
 
-  document.cookie = `googtrans=/en/${lang}; path=/;`;
-  document.cookie = `googtrans=/en/${lang}; path=/; domain=${hostname};`;
-  document.cookie = `googtrans=/en/${lang}; path=/; domain=.${hostname};`;
-
   window.location.href = `${currentPath}#googtrans(en|${lang})`;
+  window.location.reload();
 };
-
   const monthName = currentDate.toLocaleString("en-US", {
     month: "long",
     year: "numeric",
