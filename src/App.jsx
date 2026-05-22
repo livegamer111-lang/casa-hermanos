@@ -748,6 +748,14 @@ export default function App() {
       <div className="font-bold text-white">— Carlos, Spain</div>
     </div>
 
+<div className="bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur">
+  <div className="text-yellow-400 text-2xl mb-4">★★★★☆</div>
+  <p className="text-stone-300 leading-7 mb-6">
+    “Very nice apartment, great location close to the beach and restaurants. We had a comfortable and relaxing stay.”
+  </p>
+  <div className="font-bold text-white">— Daniel, Germany</div>
+</div>
+    
     <div className="bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur">
       <div className="text-yellow-400 text-2xl mb-4">★★★★★</div>
       <p className="text-stone-300 leading-7 mb-6">
