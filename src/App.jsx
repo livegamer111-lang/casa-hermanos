@@ -39,9 +39,10 @@ export default function App() {
     window.location.pathname + window.location.search;
 
   if (lang === "en") {
-    window.location.href = currentPath;
-    return;
-  }
+  window.location.href = `${currentPath}#googtrans(en|en)`;
+  window.location.reload();
+  return;
+}
 
   window.location.href = `${currentPath}#googtrans(en|${lang})`;
   window.location.reload();
