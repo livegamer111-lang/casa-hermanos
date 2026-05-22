@@ -35,26 +35,16 @@ export default function App() {
   });
 
  const changeLanguage = (lang) => {
-  let tries = 0;
+  const currentPath =
+    window.location.pathname + window.location.search;
 
-  const interval = setInterval(() => {
-    const select = document.querySelector(".goog-te-combo");
+  if (lang === "en") {
+    window.location.href = currentPath;
+    return;
+  }
 
-    if (select) {
-      select.value = lang;
-
-      select.dispatchEvent(new Event("input", { bubbles: true }));
-      select.dispatchEvent(new Event("change", { bubbles: true }));
-
-      clearInterval(interval);
-    }
-
-    tries++;
-
-    if (tries > 20) {
-      clearInterval(interval);
-    }
-  }, 300);
+  window.location.href = `${currentPath}#googtrans(en|${lang})`;
+  window.location.reload();
 };
 
   const monthName = currentDate.toLocaleString("en-US", {
