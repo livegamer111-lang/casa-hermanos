@@ -327,7 +327,15 @@ export default function App() {
 
   const isClosedDate = (day) => isPastDate(day) || isBookedDate(day);
 
-  const getPriceForDate = () => 85;
+  const getPriceForDate = (date) => {
+  const month = date.getMonth() + 1;
+
+  if (month === 5) return 60; // May
+  if (month === 6) return 70; // June
+  if (month === 7 || month === 8) return 85; // July and August
+
+  return 49; // All other months
+};
 
   const getPrice = (day) => {
     const date = new Date(year, month, day);
