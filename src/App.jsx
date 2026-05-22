@@ -57,10 +57,10 @@ export default function App() {
 
   const isClosedDate = (day) => isPastDate(day) || isBookedDate(day);
 
-  const getPriceForDate = (date) => {
-    const dayOfWeek = date.getDay();
-    return dayOfWeek === 5 || dayOfWeek === 6 ? 95 : 80;
-  };
+const getPriceForDate = (date) => {
+  return 125;
+};
+
 
   const getPrice = (day) => {
     const date = new Date(year, month, day);
