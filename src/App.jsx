@@ -11,7 +11,7 @@ export default function App() {
     new window.google.translate.TranslateElement(
       {
         pageLanguage: "en",
-        includedLanguages: "en,nl,es,sv,ar,uk,pl",
+        includedLanguages: "en,nl,es,sv,ar,uk,pl,de",
       },
       "google_translate_element"
     );
