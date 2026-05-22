@@ -425,7 +425,7 @@ const handleBookingSubmit = async (event) => {
 
                 <div className="border-t border-white/20 pt-4 mt-4 space-y-2">
                   <div className="flex justify-between"><span>Apartment price</span><span>{bookingNights > 0 ? `€${apartmentPrice}` : "-"}</span></div>
-                  <div className="flex justify-between"><span>Cleaning fee</span><span>{bookingNights > 0 ? `€${cleaningFee}` : "€70"}</span></div>
+                  <div className="flex justify-between"><span>Cleaning fee</span><span>{bookingNights > 0 ? `€${cleaningFee}` : "€100"}</span></div>
                   <div className="flex justify-between text-xl font-bold text-white pt-3"><span>Total price</span><span>{bookingNights > 0 ? `€${totalPrice}` : "-"}</span></div>
                 </div>
               </div>
