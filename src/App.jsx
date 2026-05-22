@@ -37,17 +37,18 @@ const [bookingForm, setBookingForm] = useState({
 });
 
 const changeLanguage = (lang) => {
-  const currentPath =
-    window.location.pathname + window.location.search;
+  const select = document.querySelector(".goog-te-combo");
 
-  if (lang === "en") {
-    window.location.href = `${currentPath}#googtrans(en|en)`;
+  if (!select) return;
+
+  select.value = lang;
+
+  select.dispatchEvent(new Event("change"));
+  select.dispatchEvent(new Event("input"));
+
+  setTimeout(() => {
     window.location.reload();
-    return;
-  }
-
-  window.location.href = `${currentPath}#googtrans(en|${lang})`;
-  window.location.reload();
+  }, 500);
 };
   const monthName = currentDate.toLocaleString("en-US", {
     month: "long",
