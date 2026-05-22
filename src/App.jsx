@@ -449,7 +449,7 @@ const handleBookingSubmit = async (event) => {
 
               {bookingSent && (
                 <div className="mt-6 bg-emerald-500/20 border border-emerald-400 text-emerald-100 rounded-2xl p-4 leading-6">
-                  Booking request created. After the website goes online, this form can be connected to email or a booking system.
+                  Thank you! Your booking request has been sent successfully. We will contact you soon.
                 </div>
               )}
             </div>
