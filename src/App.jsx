@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function App() {
   const [selectedPhoto, setSelectedPhoto] = useState(null);
@@ -6,6 +6,23 @@ export default function App() {
   const [checkIn, setCheckIn] = useState(null);
   const [checkOut, setCheckOut] = useState(null);
   const [bookingSent, setBookingSent] = useState(false);
+  useEffect(() => {
+  window.googleTranslateElementInit = () => {
+    new window.google.translate.TranslateElement(
+      {
+        pageLanguage: "en",
+        includedLanguages: "en,nl,es,sv,ar,uk,pl",
+      },
+      "google_translate_element"
+    );
+  };
+
+  const script = document.createElement("script");
+  script.src =
+    "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+  script.async = true;
+  document.body.appendChild(script);
+}, []);
   const [bookingForm, setBookingForm] = useState({
     name: "",
     email: "",
@@ -216,7 +233,9 @@ const handleBookingSubmit = async (event) => {
         />
         <div className="absolute inset-0 bg-gradient-to-br from-orange-500/20 via-transparent to-cyan-400/20" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/20 to-black/70" />
-
+<div className="absolute top-6 right-6 z-20 bg-white rounded-xl p-2 shadow-xl">
+  <div id="google_translate_element"></div>
+</div>
         <div className="relative z-10 h-full max-w-7xl mx-auto px-6 flex flex-col justify-center items-center text-center">
           <div className="mb-6 rounded-full border border-white/30 bg-white/10 backdrop-blur px-5 py-2 text-white/90 text-sm tracking-[0.35em] uppercase">
             Torrevieja · Spain
