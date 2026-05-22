@@ -34,16 +34,27 @@ export default function App() {
     message: "",
   });
 
-  const changeLanguage = (lang) => {
+ const changeLanguage = (lang) => {
+  let tries = 0;
+
   const interval = setInterval(() => {
     const select = document.querySelector(".goog-te-combo");
 
     if (select) {
       select.value = lang;
-      select.dispatchEvent(new Event("change"));
+
+      select.dispatchEvent(new Event("input", { bubbles: true }));
+      select.dispatchEvent(new Event("change", { bubbles: true }));
+
       clearInterval(interval);
     }
-  }, 500);
+
+    tries++;
+
+    if (tries > 20) {
+      clearInterval(interval);
+    }
+  }, 300);
 };
 
   const monthName = currentDate.toLocaleString("en-US", {
