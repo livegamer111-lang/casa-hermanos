@@ -8,44 +8,55 @@ export default function App() {
   const [bookingSent, setBookingSent] = useState(false);
 
   useEffect(() => {
-    window.googleTranslateElementInit = () => {
-      new window.google.translate.TranslateElement(
-        {
-          pageLanguage: "en",
-          includedLanguages: "en,nl,es,sv,ar,uk,pl,de",
-          autoDisplay: false,
-        },
-        "google_translate_element"
-      );
-    };
+  window.googleTranslateElementInit = () => {
+    new window.google.translate.TranslateElement(
+      {
+        pageLanguage: "en",
+        includedLanguages: "en,nl,es,sv,ar,uk,pl,de",
+        autoDisplay: false,
+      },
+      "google_translate_element"
+    );
+  };
 
+  if (!document.querySelector("script[src*='translate_a/element.js']")) {
     const script = document.createElement("script");
     script.src =
       "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
     script.async = true;
     document.body.appendChild(script);
-  }, []);
+  }
+}, []);
 
-  const [bookingForm, setBookingForm] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    guests: "2",
-    message: "",
-  });
+const [bookingForm, setBookingForm] = useState({
+  name: "",
+  email: "",
+  phone: "",
+  guests: "2",
+  message: "",
+});
 
- const changeLanguage = (lang) => {
-  const currentPath =
-    window.location.pathname + window.location.search;
+const changeLanguage = (lang) => {
+  const hostname = window.location.hostname;
+  const currentPath = window.location.pathname + window.location.search;
+
+  document.cookie =
+    "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  document.cookie =
+    `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=${hostname};`;
+  document.cookie =
+    `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.${hostname};`;
 
   if (lang === "en") {
-  window.location.href = `${currentPath}#googtrans(en|en)`;
-  window.location.reload();
-  return;
-}
+    window.location.href = currentPath;
+    return;
+  }
+
+  document.cookie = `googtrans=/en/${lang}; path=/;`;
+  document.cookie = `googtrans=/en/${lang}; path=/; domain=${hostname};`;
+  document.cookie = `googtrans=/en/${lang}; path=/; domain=.${hostname};`;
 
   window.location.href = `${currentPath}#googtrans(en|${lang})`;
-  window.location.reload();
 };
 
   const monthName = currentDate.toLocaleString("en-US", {
