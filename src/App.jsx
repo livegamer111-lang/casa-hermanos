@@ -35,13 +35,16 @@ export default function App() {
   });
 
   const changeLanguage = (lang) => {
+  const interval = setInterval(() => {
     const select = document.querySelector(".goog-te-combo");
 
     if (select) {
       select.value = lang;
       select.dispatchEvent(new Event("change"));
+      clearInterval(interval);
     }
-  };
+  }, 500);
+};
 
   const monthName = currentDate.toLocaleString("en-US", {
     month: "long",
