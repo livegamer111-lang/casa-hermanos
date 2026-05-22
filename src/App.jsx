@@ -246,59 +246,16 @@ const changeLanguage = (lang) => {
 
         <div id="google_translate_element" className="hidden"></div>
 
-        <div className="absolute top-6 right-6 z-30 flex gap-2 bg-white/20 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 shadow-2xl">
-  <a href="/" className="text-xl hover:scale-125 transition">🇬🇧</a>
-
-  <a
-    href="https://translate.google.com/translate?sl=en&tl=nl&u=https://YOUR-WEBSITE.vercel.app"
-    className="text-xl hover:scale-125 transition"
-  >
-    🇳🇱
-  </a>
-
-  <a
-    href="https://translate.google.com/translate?sl=en&tl=es&u=https://YOUR-WEBSITE.vercel.app"
-    className="text-xl hover:scale-125 transition"
-  >
-    🇪🇸
-  </a>
-
-  <a
-    href="https://translate.google.com/translate?sl=en&tl=de&u=https://YOUR-WEBSITE.vercel.app"
-    className="text-xl hover:scale-125 transition"
-  >
-    🇩🇪
-  </a>
-
-  <a
-    href="https://translate.google.com/translate?sl=en&tl=sv&u=https://YOUR-WEBSITE.vercel.app"
-    className="text-xl hover:scale-125 transition"
-  >
-    🇸🇪
-  </a>
-
-  <a
-    href="https://translate.google.com/translate?sl=en&tl=ar&u=https://YOUR-WEBSITE.vercel.app"
-    className="text-xl hover:scale-125 transition"
-  >
-    🇸🇦
-  </a>
-
-  <a
-    href="https://translate.google.com/translate?sl=en&tl=uk&u=https://YOUR-WEBSITE.vercel.app"
-    className="text-xl hover:scale-125 transition"
-  >
-    🇺🇦
-  </a>
-
-  <a
-    href="https://translate.google.com/translate?sl=en&tl=pl&u=https://YOUR-WEBSITE.vercel.app"
-    className="text-xl hover:scale-125 transition"
-  >
-    🇵🇱
-  </a>
+       <div className="absolute top-6 right-6 z-30 flex gap-2 bg-white/20 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 shadow-2xl">
+  <button onClick={() => changeLanguage("en")} className="text-xl hover:scale-125 transition">🇬🇧</button>
+  <button onClick={() => changeLanguage("nl")} className="text-xl hover:scale-125 transition">🇳🇱</button>
+  <button onClick={() => changeLanguage("es")} className="text-xl hover:scale-125 transition">🇪🇸</button>
+  <button onClick={() => changeLanguage("de")} className="text-xl hover:scale-125 transition">🇩🇪</button>
+  <button onClick={() => changeLanguage("sv")} className="text-xl hover:scale-125 transition">🇸🇪</button>
+  <button onClick={() => changeLanguage("ar")} className="text-xl hover:scale-125 transition">🇸🇦</button>
+  <button onClick={() => changeLanguage("uk")} className="text-xl hover:scale-125 transition">🇺🇦</button>
+  <button onClick={() => changeLanguage("pl")} className="text-xl hover:scale-125 transition">🇵🇱</button>
 </div>
-
         <div className="relative z-10 h-full max-w-7xl mx-auto px-6 flex flex-col justify-center items-center text-center">
           <div className="mb-6 rounded-full border border-white/30 bg-white/10 backdrop-blur px-5 py-2 text-white/90 text-sm tracking-[0.35em] uppercase">
             Torrevieja · Spain
