@@ -757,7 +757,60 @@ export default function App() {
     </div>
 
   </div>
+<div className="mt-24">
 
+  <p className="text-sm font-semibold tracking-[0.25em] uppercase text-amber-500 mb-4">
+    Leave a Review
+  </p>
+
+  <h2 className="text-4xl md:text-5xl font-bold mb-10">
+    Share Your Experience
+  </h2>
+
+  <form
+    action="https://formspree.io/f/mredkzvo"
+    method="POST"
+    className="max-w-3xl mx-auto space-y-5"
+  >
+
+    <input
+      type="text"
+      name="review_name"
+      placeholder="Your name"
+      className="w-full rounded-2xl px-5 py-4 text-stone-900 bg-white border border-stone-200 outline-none"
+      required
+    />
+
+    <select
+      name="review_rating"
+      className="w-full rounded-2xl px-5 py-4 text-stone-900 bg-white border border-stone-200 outline-none"
+      required
+    >
+      <option value="">Select Rating</option>
+      <option value="5">★★★★★ Excellent</option>
+      <option value="4">★★★★ Very Good</option>
+      <option value="3">★★★ Good</option>
+      <option value="2">★★ Fair</option>
+      <option value="1">★ Poor</option>
+    </select>
+
+    <textarea
+      name="review_message"
+      placeholder="Write your experience..."
+      className="w-full rounded-2xl px-5 py-4 text-stone-900 bg-white border border-stone-200 outline-none min-h-[180px]"
+      required
+    />
+
+    <button
+      type="submit"
+      className="bg-amber-600 hover:bg-amber-700 transition px-10 py-4 rounded-full text-lg font-bold shadow-lg"
+    >
+      Submit Review
+    </button>
+
+  </form>
+
+</div>
 </div>
           </div>
         </div>
