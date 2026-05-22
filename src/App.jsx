@@ -142,10 +142,43 @@ const getPriceForDate = (date) => {
     return date > checkIn && date < checkOut;
   };
 
-  const handleBookingSubmit = (event) => {
-    event.preventDefault();
+const handleBookingSubmit = async (event) => {
+  event.preventDefault();
+
+  const response = await fetch("https://formspree.io/f/mredkzvo", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify({
+      name: bookingForm.name,
+      email: bookingForm.email,
+      phone: bookingForm.phone,
+      guests: bookingForm.guests,
+      message: bookingForm.message,
+      checkIn: checkIn ? formatDate(checkIn) : "",
+      checkOut: checkOut ? formatDate(checkOut) : "",
+      nights: bookingNights,
+      totalPrice: totalPrice,
+    }),
+  });
+
+  if (response.ok) {
     setBookingSent(true);
-  };
+
+    setBookingForm({
+      name: "",
+      email: "",
+      phone: "",
+      guests: "2",
+      message: "",
+    });
+
+    setCheckIn(null);
+    setCheckOut(null);
+  }
+};
 
   const heroPhoto = "https://i.imgur.com/R0yGc4Q.jpeg";
 
