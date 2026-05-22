@@ -58,7 +58,7 @@ export default function App() {
   const isClosedDate = (day) => isPastDate(day) || isBookedDate(day);
 
 const getPriceForDate = (date) => {
-  return 125;
+  return 85;
 };
 
 
@@ -67,7 +67,7 @@ const getPriceForDate = (date) => {
     return `€${getPriceForDate(date)}`;
   };
 
-  const cleaningFee = 70;
+  const cleaningFee = 100;
 
   const getBookingNights = () => {
     if (!checkIn || !checkOut) return 0;
