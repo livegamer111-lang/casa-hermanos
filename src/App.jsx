@@ -16,8 +16,11 @@ export default function App() {
   });
 
   const t = {
-    en: {
-      viewGallery: "View Gallery",
+  en: {
+    heroText:
+      "Beautiful apartment only 80 meters from Playa del Cura - Torrevieja.",
+
+    viewGallery: "View Gallery",
       checkAvailability: "Check Availability",
       about: "About the apartment",
       stay: "A comfortable seaside stay in Torrevieja",
