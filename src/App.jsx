@@ -595,66 +595,6 @@ export default function App() {
       </section>
 </section>
 
-{/* PERFECT LOCATION SECTION */}
-
-<section className="bg-white py-24 px-6">
-  <div className="max-w-6xl mx-auto">
-
-    <div className="text-center mb-14">
-      <p className="text-sm font-semibold tracking-[0.25em] uppercase text-amber-700 mb-4">
-        Perfect Location
-      </p>
-
-      <h2 className="text-4xl md:text-5xl font-bold">
-        Everything Within Walking Distance
-      </h2>
-    </div>
-
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-      <div className="bg-stone-50 border border-stone-200 rounded-[2rem] p-7 shadow-sm hover:shadow-xl transition">
-        <div className="text-4xl mb-5">🏖️</div>
-        <h3 className="text-2xl font-bold mb-2">Playa del Cura</h3>
-        <p className="text-stone-600 text-lg">
-          1 min walking
-        </p>
-      </div>
-
-      <div className="bg-stone-50 border border-stone-200 rounded-[2rem] p-7 shadow-sm hover:shadow-xl transition">
-        <div className="text-4xl mb-5">🛒</div>
-        <h3 className="text-2xl font-bold mb-2">Supermarket</h3>
-        <p className="text-stone-600 text-lg">
-          1 min walking
-        </p>
-      </div>
-
-      <div className="bg-stone-50 border border-stone-200 rounded-[2rem] p-7 shadow-sm hover:shadow-xl transition">
-        <div className="text-4xl mb-5">🍽️</div>
-        <h3 className="text-2xl font-bold mb-2">Restaurants</h3>
-        <p className="text-stone-600 text-lg">
-          1 min walking
-        </p>
-      </div>
-
-      <div className="bg-stone-50 border border-stone-200 rounded-[2rem] p-7 shadow-sm hover:shadow-xl transition">
-        <div className="text-4xl mb-5">🚌</div>
-        <h3 className="text-2xl font-bold mb-2">Bus Station</h3>
-        <p className="text-stone-600 text-lg">
-          6 min walking
-        </p>
-      </div>
-
-      <div className="bg-stone-50 border border-stone-200 rounded-[2rem] p-7 shadow-sm hover:shadow-xl transition lg:col-span-2">
-        <div className="text-4xl mb-5">✈️</div>
-        <h3 className="text-2xl font-bold mb-2">Alicante Airport</h3>
-        <p className="text-stone-600 text-lg">
-          40 min by car
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
 
       <section id="gallery" className="bg-white py-24 px-6">
         <div className="max-w-7xl mx-auto">
