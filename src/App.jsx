@@ -716,7 +716,35 @@ export default function App() {
                   {tr.sendRequest}
                 </button>
               </form>
+<div className="mt-6 bg-white/5 border border-white/10 rounded-2xl p-5">
+  <p className="text-sm uppercase tracking-[0.25em] text-stone-400 mb-5">
+    Accepted Payments
+  </p>
 
+  <div className="flex flex-wrap items-center gap-4">
+
+    <div className="bg-white rounded-xl px-5 py-3">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
+        alt="Visa"
+        className="h-6"
+      />
+    </div>
+
+    <div className="bg-white rounded-xl px-5 py-3">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Wero_logo.svg"
+        alt="Wero"
+        className="h-6"
+      />
+    </div>
+
+    <div className="bg-white rounded-xl px-5 py-3 text-black font-bold text-sm tracking-wide">
+      BANK TRANSFER
+    </div>
+
+  </div>
+</div>
               {bookingSent && (
                 <div className="mt-6 bg-emerald-500/20 border border-emerald-400 text-emerald-100 rounded-2xl p-4 leading-6">
                   {tr.success}
