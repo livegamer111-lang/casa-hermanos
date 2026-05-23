@@ -872,7 +872,13 @@ export default function App() {
     <div className="bg-white/10 px-4 py-2 rounded-xl">
       💶 Cash
     </div>
+
+    <div className="bg-white/10 px-4 py-2 rounded-xl">
+      🏦 Bank Transfer
     </div>
+
+  </div>
+</div>
 
   </div>
 </div>
