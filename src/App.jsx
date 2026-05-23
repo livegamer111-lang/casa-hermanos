@@ -854,39 +854,7 @@ export default function App() {
     </button>
 
   </form>
-<div className="mt-6 bg-white/5 border border-white/10 rounded-2xl p-5">
-  <p className="text-sm uppercase tracking-[0.25em] text-stone-400 mb-5">
-    Accepted Payments
-  </p>
-
-  <div className="flex flex-wrap items-center gap-5">
-
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
-      alt="Visa"
-      className="h-8 bg-white rounded-lg px-3 py-2"
-    />
-
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
-      alt="PayPal"
-      className="h-8 bg-white rounded-lg px-3 py-2"
-    />
-
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/4/41/Bank_transfer_logo.svg"
-      alt="Bank Transfer"
-      className="h-8 bg-white rounded-lg px-3 py-2"
-    />
-
-    <div className="bg-white rounded-lg px-4 py-2 text-black font-bold">
-      Wero
-    </div>
-
-    <div className="bg-white rounded-lg px-4 py-2 text-black font-bold">
-      Cash
-    </div>
-
+  
   </div>
 </div>
           </div>
