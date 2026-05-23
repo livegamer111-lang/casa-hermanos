@@ -539,18 +539,19 @@ export default function App() {
     <div className="relative rounded-[2rem] overflow-hidden border border-white/10 shadow-[0_25px_80px_rgba(0,0,0,0.45)]">
 
       <video
-        className="w-full aspect-video object-cover"
-        autoPlay
-        muted
-        loop
-        playsInline
-        controls
-      >
-        <source
-  src="/apartment-tour.mp4"
-  type="video/quicktime"
-/>
-      </video>
+  className="w-full aspect-video object-cover"
+  autoPlay
+  muted
+  loop
+  playsInline
+  controls
+  preload="metadata"
+>
+  <source
+    src="/apartment-tour.mp4"
+    type="video/mp4"
+  />
+</video>
 
     </div>
   </div>
