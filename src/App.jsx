@@ -504,7 +504,7 @@ export default function App() {
           <img
   src="/casa-hermanos-logo.png"
   alt="Casa Hermanos"
-  className="w-[700px] md:w-[1800px] mx-auto drop-shadow-[0_20px_60px_rgba(0,0,0,0.60)]"
+  className="w-[950px] md:w-[2500px] mx-auto drop-shadow-[0_30px_100px_rgba(0,0,0,0.7)]"
 />
           <div className="mt-6 h-px w-28 bg-white/70" />
           <p className="mt-8 text-white text-xl md:text-3xl font-light tracking-wide max-w-3xl mx-auto leading-relaxed drop-shadow-xl">
