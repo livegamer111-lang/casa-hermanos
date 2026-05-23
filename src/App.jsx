@@ -546,7 +546,7 @@ export default function App() {
         controls
       >
         <source
-  src="/apartment-tour.mp4.mov"
+  src="/apartment-tour.mp4"
   type="video/quicktime"
 />
       </video>
