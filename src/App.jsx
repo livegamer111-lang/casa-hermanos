@@ -546,9 +546,9 @@ export default function App() {
         controls
       >
         <source
-          src="/video/apartment-tour.mp4.mov"
-          type="video/mp4"
-        />
+  src="/apartment-tour.mp4.mov"
+  type="video/quicktime"
+/>
       </video>
 
     </div>
