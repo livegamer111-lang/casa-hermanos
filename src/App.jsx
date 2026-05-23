@@ -730,9 +730,6 @@ export default function App() {
         className="h-8 object-contain"
       />
     </div>
-
-    <div className="bg-white rounded-2xl px-6 py-4">
-  <img
    <div className="bg-white rounded-2xl px-6 py-4 text-black font-bold text-lg tracking-wide">
   WERO
 </div>
