@@ -17,7 +17,6 @@ export default function App() {
 
   const t = {
     en: {
-      hero: "Beautiful apartment only 80 meters from Playa del Cura - Torrevieja",
       viewGallery: "View Gallery",
       checkAvailability: "Check Availability",
       about: "About the apartment",
