@@ -723,23 +723,23 @@ export default function App() {
 
   <div className="flex flex-wrap items-center gap-4">
 
-    <div className="bg-white rounded-xl px-5 py-3">
+    <div className="bg-white rounded-2xl px-6 py-4">
       <img
-        src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
+        src="https://cdn-icons-png.flaticon.com/512/349/349221.png"
         alt="Visa"
-        className="h-6"
+        className="h-8 object-contain"
       />
     </div>
 
-    <div className="bg-white rounded-xl px-5 py-3">
+    <div className="bg-white rounded-2xl px-6 py-4">
       <img
-        src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Wero_logo.svg"
+        src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Wero_logo_RGB.png"
         alt="Wero"
-        className="h-6"
+        className="h-8 object-contain"
       />
     </div>
 
-    <div className="bg-white rounded-xl px-5 py-3 text-black font-bold text-sm tracking-wide">
+    <div className="bg-white rounded-2xl px-6 py-4 text-black font-bold text-sm tracking-wide">
       BANK TRANSFER
     </div>
 
