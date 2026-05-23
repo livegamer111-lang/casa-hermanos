@@ -731,8 +731,12 @@ export default function App() {
       />
     </div>
 
-    <div className="bg-white rounded-2xl px-6 py-4 text-black font-bold text-lg tracking-wide">
-  WERO
+    <div className="bg-white rounded-2xl px-6 py-4">
+  <img
+    src="https://www.wero-wallet.eu/wp-content/uploads/2024/07/logo-wero.png"
+    alt="Wero"
+    className="h-8 object-contain"
+  />
 </div>
 
     <div className="bg-white rounded-2xl px-6 py-4 text-black font-bold text-sm tracking-wide">
