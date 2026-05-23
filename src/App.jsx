@@ -501,9 +501,11 @@ export default function App() {
           <div className="mb-6 rounded-full border border-white/30 bg-white/10 backdrop-blur px-5 py-2 text-white/90 text-sm tracking-[0.35em] uppercase">
             Torrevieja · Spain
           </div>
-          <h1 className="text-5xl md:text-8xl font-serif italic font-bold tracking-[0.12em] text-white drop-shadow-2xl">
-  Casa Hermanos
-</h1>
+          <img
+  src="/casa-hermanos-logo.png"
+  alt="Casa Hermanos"
+  className="w-[280px] md:w-[700px] mx-auto drop-shadow-[0_15px_40px_rgba(0,0,0,0.45)]"
+/>
           <div className="mt-6 h-px w-28 bg-white/70" />
           <p className="mt-8 text-white text-xl md:text-3xl font-light tracking-wide max-w-3xl mx-auto leading-relaxed drop-shadow-xl">
             {tr.hero}
