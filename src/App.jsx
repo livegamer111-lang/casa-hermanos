@@ -855,34 +855,39 @@ export default function App() {
 
   </form>
 <div className="mt-6 bg-white/5 border border-white/10 rounded-2xl p-5">
-  <p className="text-sm uppercase tracking-[0.25em] text-stone-400 mb-4">
+  <p className="text-sm uppercase tracking-[0.25em] text-stone-400 mb-5">
     Accepted Payments
   </p>
 
-  <div className="flex flex-wrap items-center gap-4 text-white text-lg">
+  <div className="flex flex-wrap items-center gap-5">
 
-    <div className="bg-white/10 px-4 py-2 rounded-xl">
-      💳 Visa
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
+      alt="Visa"
+      className="h-8 bg-white rounded-lg px-3 py-2"
+    />
+
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
+      alt="PayPal"
+      className="h-8 bg-white rounded-lg px-3 py-2"
+    />
+
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/4/41/Bank_transfer_logo.svg"
+      alt="Bank Transfer"
+      className="h-8 bg-white rounded-lg px-3 py-2"
+    />
+
+    <div className="bg-white rounded-lg px-4 py-2 text-black font-bold">
+      Wero
     </div>
 
-    <div className="bg-white/10 px-4 py-2 rounded-xl">
-      📱 Wero
-    </div>
-
-    <div className="bg-white/10 px-4 py-2 rounded-xl">
-      💶 Cash
-    </div>
-
-    <div className="bg-white/10 px-4 py-2 rounded-xl">
-      🏦 Bank Transfer
+    <div className="bg-white rounded-lg px-4 py-2 text-black font-bold">
+      Cash
     </div>
 
   </div>
-</div>
-
-  </div>
-</div>
-</div>
 </div>
           </div>
         </div>
