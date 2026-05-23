@@ -854,7 +854,28 @@ export default function App() {
     </button>
 
   </form>
+<div className="mt-6 bg-white/5 border border-white/10 rounded-2xl p-5">
+  <p className="text-sm uppercase tracking-[0.25em] text-stone-400 mb-4">
+    Accepted Payments
+  </p>
 
+  <div className="flex flex-wrap items-center gap-4 text-white text-lg">
+
+    <div className="bg-white/10 px-4 py-2 rounded-xl">
+      💳 Visa
+    </div>
+
+    <div className="bg-white/10 px-4 py-2 rounded-xl">
+      📱 Wero
+    </div>
+
+    <div className="bg-white/10 px-4 py-2 rounded-xl">
+      💶 Cash
+    </div>
+    </div>
+
+  </div>
+</div>
 </div>
 </div>
           </div>
