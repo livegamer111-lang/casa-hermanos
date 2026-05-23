@@ -518,7 +518,42 @@ export default function App() {
           </div>
         </div>
       </section>
+<section className="bg-black py-24 px-6">
+  <div className="max-w-6xl mx-auto">
 
+    <div className="text-center mb-12">
+      <p className="text-amber-400 uppercase tracking-[0.25em] text-sm mb-4">
+        Video Tour
+      </p>
+
+      <h2 className="text-4xl md:text-6xl font-bold text-white mb-5">
+        Explore Casa Hermanos
+      </h2>
+
+      <p className="text-stone-400 text-lg max-w-2xl mx-auto leading-8">
+        Experience the apartment, beach atmosphere and modern interior before your stay.
+      </p>
+    </div>
+
+    <div className="relative rounded-[2rem] overflow-hidden border border-white/10 shadow-[0_25px_80px_rgba(0,0,0,0.45)]">
+
+      <video
+        className="w-full aspect-video object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+        controls
+      >
+        <source
+          src="/video/apartment-tour.mp4.mov"
+          type="video/mp4"
+        />
+      </video>
+
+    </div>
+  </div>
+</section>
       <section className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-14 items-center">
         <div>
           <p className="text-sm font-semibold tracking-[0.25em] uppercase text-amber-700 mb-4">{tr.about}</p>
