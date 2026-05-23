@@ -593,8 +593,6 @@ export default function App() {
           </div>
         </div>
       </section>
-</section>
-
 
       <section id="gallery" className="bg-white py-24 px-6">
         <div className="max-w-7xl mx-auto">
