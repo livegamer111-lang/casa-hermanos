@@ -529,44 +529,9 @@ t.pl = {
       ],
     },
   };
-
-  const t = {
-  en: {
-    ...
-  },
-
-  nl: {
-    ...
-  },
-
-  es: {
-    ...
-  },
-
-  de: {
-    ...
-  },
-
-  sv: {
-    ...
-  },
-
-  ar: {
-    ...
-  },
-
-  uk: {
-    ...
-  },
-
-  pl: {
-    ...
-  }
-};
-
-  const tr = t[language];
-  const isRTL = language === "ar";
-
+const tr = t[language];
+const isRTL = language === "ar";
+  
   const monthName = currentDate.toLocaleString(locales[language], {
     month: "long",
     year: "numeric",
