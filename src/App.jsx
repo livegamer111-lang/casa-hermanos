@@ -530,11 +530,39 @@ t.pl = {
     },
   };
 
-  t.de = t.en;
-  t.sv = t.en;
-  t.ar = t.en;
-  t.uk = t.en;
-  t.pl = t.en;
+  const t = {
+  en: {
+    ...
+  },
+
+  nl: {
+    ...
+  },
+
+  es: {
+    ...
+  },
+
+  de: {
+    ...
+  },
+
+  sv: {
+    ...
+  },
+
+  ar: {
+    ...
+  },
+
+  uk: {
+    ...
+  },
+
+  pl: {
+    ...
+  }
+};
 
   const tr = t[language];
   const isRTL = language === "ar";
