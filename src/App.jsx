@@ -454,21 +454,85 @@ export default function App() {
     }
   };
   
-  const heroPhoto = "https://i.imgur.com/R0yGc4Q.jpeg";
+  const heroPhoto = "/hero.jpeg";
 
   const photos = [
-    { src: "https://i.imgur.com/5oKlE6Q.jpeg", title: "Apartment" },
-    { src: "https://i.imgur.com/xJtQcax.jpeg", title: "Living Room" },
-    { src: "https://i.imgur.com/x3aw19i.jpeg", title: "Living Room" },
-    { src: "https://i.imgur.com/ePq82ur.jpeg", title: "Dining Room" },
-    { src: "https://i.imgur.com/yRlbEVx.jpeg", title: "Dining Room" },
-    { src: "https://i.imgur.com/o2hPyNW.jpeg", title: "Kitchen" },
-    { src: "https://i.imgur.com/5eGiFNz.jpeg", title: "Apartment" },
-    { src: "https://i.imgur.com/1V7dhKw.jpeg", title: "Room 1" },
-    { src: "https://i.imgur.com/oOCUX0y.jpeg", title: "Room 2" },
-    { src: "https://i.imgur.com/WFXhmAS.jpeg", title: "Room 2" },
-    { src: "https://i.imgur.com/I2FTLGe.jpeg", title: "Room 2" },
-    { src: "https://i.imgur.com/Z3Af1XS.jpeg", title: "Bathroom" },
+const photos = [
+  {
+    src: "/Apartment.jpeg",
+    title: "Apartment Exterior",
+  },
+
+  {
+    src: "/living-room-1.jpeg",
+    title: "Living Room",
+  },
+
+  {
+    src: "/living-room-2.jpeg",
+    title: "Living Area",
+  },
+
+  {
+    src: "/dining-room-1.jpeg",
+    title: "Dining Room",
+  },
+
+  {
+    src: "/dining-room-2.jpeg",
+    title: "Dining Space",
+  },
+
+  {
+    src: "/kitchen.jpeg",
+    title: "Kitchen",
+  },
+
+  {
+    src: "/apartment-2.jpeg",
+    title: "Apartment View",
+  },
+
+  {
+    src: "/room-1.jpeg",
+    title: "Bedroom 1",
+  },
+
+  {
+    src: "/room-2a.jpeg",
+    title: "Bedroom 2",
+  },
+
+  {
+    src: "/room-2b.jpeg",
+    title: "Bedroom Details",
+  },
+
+  {
+    src: "/bathroom.jpeg",
+    title: "Bathroom",
+  },
+
+  {
+    src: "/omgeving.jpeg",
+    title: "Nearby Area",
+  },
+
+  {
+    src: "/omgeving-1.jpeg",
+    title: "Beach & Boulevard",
+  },
+
+  {
+    src: "/omgeving-2.jpeg",
+    title: "Restaurants Nearby",
+  },
+
+  {
+    src: "/omgeving-3.jpeg",
+    title: "Torrevieja Atmosphere",
+  },
+];
   ];
 
   const features = [
