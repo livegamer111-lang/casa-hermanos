@@ -456,7 +456,7 @@ export default function App() {
   
   const heroPhoto = "/hero.jpeg";
 
-  const photos = [
+
 const photos = [
   {
     src: "/Apartment.jpeg",
