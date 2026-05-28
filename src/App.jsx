@@ -533,7 +533,6 @@ const photos = [
     title: "Torrevieja Atmosphere",
   },
 ];
-  ];
 
   const features = [
     { icon: "🌊", title: "Sea View", text: "Beautiful sea view from the balcony" },
