@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 
 export default function App() {
@@ -104,269 +103,9 @@ export default function App() {
         ["★★★★☆", "Very nice apartment, great location close to the beach and restaurants. We had a comfortable and relaxing stay.", "— Daniel, Germany"],
         ["★★★★★", "Excellent stay. Close to restaurants and only 1 minute from the beach.", "— Sophie, Netherlands"],
       ],
-      photoTitles: [
-        "Apartment Exterior", "Living Room", "Living Area", "Dining Room", "Dining Space", "Kitchen", "Apartment View", "Bedroom 1", "Bedroom 2", "Bedroom Details", "Bathroom", "Nearby Area", "Beach & Boulevard", "Restaurants Nearby", "Torrevieja Atmosphere"
-      ],
+      photoTitles: ["Apartment", "Living Room", "Living Area", "Dining Room", "Dining Space", "Kitchen", "Apartment", "Bedroom 1", "Bedroom 2", "Bedroom Details", "Bathroom", "Nearby Area", "Nearby Area", "Nearby Area", "Nearby Area"],
     },
-t.de = {
-  ...t.en,
-  hero: "Wunderschönes Apartment nur 80 Meter von Playa del Cura - Torrevieja entfernt.",
-  viewGallery: "Galerie ansehen",
-  checkAvailability: "Verfügbarkeit prüfen",
-  videoTour: "Videotour",
-  explore: "Casa Hermanos entdecken",
-  videoText: "Erleben Sie das Apartment, die Strandatmosphäre und das moderne Interieur vor Ihrem Aufenthalt.",
-  about: "Über das Apartment",
-  stay: "Ein komfortabler Aufenthalt am Meer in Torrevieja",
-  aboutText: "Casa Hermanos ist ein wunderschönes Apartment nur 80 Meter von Playa del Cura in Torrevieja entfernt. Genießen Sie Sonne, Strand, Restaurants und die entspannte Atmosphäre der spanischen Küste. Perfekt für Familien, Paare oder Freunde, die einen schönen Urlaub am Meer suchen.",
-  howToBook: "So buchen Sie",
-  bookingText: "Wählen Sie Anreise- und Abreisedatum, geben Sie Ihre Daten ein und senden Sie direkt über die Website eine Buchungsanfrage.",
-  fullName: "Vollständiger Name",
-  emailAddress: "E-Mail-Adresse",
-  phoneNumber: "Telefonnummer",
-  extraMessage: "Zusätzliche Nachricht",
-  selectDate: "Datum auswählen",
-  acceptedPayments: "Akzeptierte Zahlungsmethoden",
-  bankTransfer: "BANKÜBERWEISUNG",
-  guestReviews: "Gästebewertungen",
-  whatGuestsSay: "Was Gäste sagen",
-  leaveReview: "Bewertung hinterlassen",
-  shareExperience: "Teilen Sie Ihre Erfahrung",
-  yourName: "Ihr Name",
-  selectRating: "Bewertung auswählen",
-  excellent: "★★★★★ Ausgezeichnet",
-  veryGood: "★★★★ Sehr gut",
-  good: "★★★ Gut",
-  fair: "★★ Ausreichend",
-  poor: "★ Schlecht",
-  writeExperience: "Schreiben Sie Ihre Erfahrung...",
-  submitReview: "Bewertung senden",
-  guests: ["1 Gast", "2 Gäste", "3 Gäste", "4 Gäste", "5 Gäste"],
-  weekdays: ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"],
-  features: [
-    ["🌊", "Meerblick", "Schöner Meerblick vom Balkon"],
-    ["❄️", "Klimaanlage", "Klimaanlage vorhanden"],
-    ["📶", "WLAN", "Kostenloses WLAN verfügbar"],
-    ["📺", "Smart-TV", "Smart-TV vorhanden"],
-    ["🛏️", "Schlafzimmer", "2 Schlafzimmer"],
-    ["🛁", "Badezimmer", "1 Badezimmer"],
-  ],
-  beds: "Betten",
-  bedText: "1 Doppelbett (160x200 cm)",
-  bedText2: "2 Einzelbetten (90x200 cm)",
-  sofa: "Sofa",
-  sofaText: "Schlafsofa (140x180 cm)",
-  noPets: "Keine Haustiere erlaubt",
-  noPetsText: "Tiere sind im Apartment nicht erlaubt",
-};
 
-t.sv = {
-  ...t.en,
-  hero: "Vacker lägenhet bara 80 meter från Playa del Cura - Torrevieja.",
-  viewGallery: "Visa galleri",
-  checkAvailability: "Kontrollera tillgänglighet",
-  videoTour: "Videotur",
-  explore: "Utforska Casa Hermanos",
-  videoText: "Upplev lägenheten, strandkänslan och den moderna interiören före din vistelse.",
-  about: "Om lägenheten",
-  stay: "En bekväm vistelse vid havet i Torrevieja",
-  aboutText: "Casa Hermanos är en vacker lägenhet bara 80 meter från Playa del Cura i Torrevieja. Njut av solen, stranden, restaurangerna och den avslappnade atmosfären vid den spanska kusten.",
-  howToBook: "Så bokar du",
-  bookingText: "Välj in- och utcheckningsdatum, fyll i dina uppgifter och skicka en bokningsförfrågan direkt från webbplatsen.",
-  fullName: "Fullständigt namn",
-  emailAddress: "E-postadress",
-  phoneNumber: "Telefonnummer",
-  extraMessage: "Extra meddelande",
-  selectDate: "Välj datum",
-  acceptedPayments: "Accepterade betalningar",
-  bankTransfer: "BANKÖVERFÖRING",
-  guestReviews: "Gästrecensioner",
-  whatGuestsSay: "Vad gäster säger",
-  leaveReview: "Lämna en recension",
-  shareExperience: "Dela din upplevelse",
-  yourName: "Ditt namn",
-  selectRating: "Välj betyg",
-  excellent: "★★★★★ Utmärkt",
-  veryGood: "★★★★ Mycket bra",
-  good: "★★★ Bra",
-  fair: "★★ Okej",
-  poor: "★ Dåligt",
-  writeExperience: "Skriv din upplevelse...",
-  submitReview: "Skicka recension",
-  guests: ["1 gäst", "2 gäster", "3 gäster", "4 gäster", "5 gäster"],
-  weekdays: ["Mån", "Tis", "Ons", "Tor", "Fre", "Lör", "Sön"],
-  features: [
-    ["🌊", "Havsutsikt", "Vacker havsutsikt från balkongen"],
-    ["❄️", "Luftkonditionering", "Luftkonditionering finns"],
-    ["📶", "WiFi", "Gratis WiFi finns"],
-    ["📺", "Smart-TV", "Smart-TV finns"],
-    ["🛏️", "Sovrum", "2 sovrum"],
-    ["🛁", "Badrum", "1 badrum"],
-  ],
-  beds: "Sängar",
-  bedText: "1 dubbelsäng (160x200 cm)",
-  bedText2: "2 enkelsängar (90x200 cm)",
-  sofa: "Soffa",
-  sofaText: "Bäddsoffa (140x180 cm)",
-  noPets: "Husdjur ej tillåtna",
-  noPetsText: "Djur är inte tillåtna i lägenheten",
-};
-
-t.ar = {
-  ...t.en,
-  hero: "شقة جميلة على بعد 80 مترًا فقط من Playa del Cura - Torrevieja.",
-  viewGallery: "عرض المعرض",
-  checkAvailability: "تحقق من التوفر",
-  videoTour: "جولة بالفيديو",
-  explore: "استكشف Casa Hermanos",
-  videoText: "شاهد الشقة وأجواء الشاطئ والتصميم الداخلي الحديث قبل إقامتك.",
-  about: "عن الشقة",
-  stay: "إقامة مريحة بجانب البحر في توريفايجا",
-  aboutText: "Casa Hermanos شقة جميلة تقع على بعد 80 مترًا فقط من Playa del Cura في توريفايجا. استمتع بالشمس والشاطئ والمطاعم والأجواء الهادئة على الساحل الإسباني.",
-  howToBook: "طريقة الحجز",
-  bookingText: "اختر تاريخ الوصول والمغادرة، املأ بياناتك، وأرسل طلب الحجز مباشرة من الموقع.",
-  fullName: "الاسم الكامل",
-  emailAddress: "البريد الإلكتروني",
-  phoneNumber: "رقم الهاتف",
-  extraMessage: "رسالة إضافية",
-  selectDate: "اختر التاريخ",
-  acceptedPayments: "طرق الدفع المقبولة",
-  bankTransfer: "تحويل بنكي",
-  guestReviews: "آراء الضيوف",
-  whatGuestsSay: "ماذا يقول الضيوف",
-  leaveReview: "اترك تقييمًا",
-  shareExperience: "شارك تجربتك",
-  yourName: "اسمك",
-  selectRating: "اختر التقييم",
-  excellent: "★★★★★ ممتاز",
-  veryGood: "★★★★ جيد جدًا",
-  good: "★★★ جيد",
-  fair: "★★ مقبول",
-  poor: "★ سيئ",
-  writeExperience: "اكتب تجربتك...",
-  submitReview: "إرسال التقييم",
-  guests: ["ضيف واحد", "ضيفان", "3 ضيوف", "4 ضيوف", "5 ضيوف"],
-  weekdays: ["الإثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "الأحد"],
-  features: [
-    ["🌊", "إطلالة على البحر", "إطلالة جميلة على البحر من الشرفة"],
-    ["❄️", "تكييف", "يتوفر تكييف هواء"],
-    ["📶", "واي فاي", "واي فاي مجاني متوفر"],
-    ["📺", "تلفاز ذكي", "تلفاز ذكي متوفر"],
-    ["🛏️", "غرف النوم", "غرفتا نوم"],
-    ["🛁", "حمام", "حمام واحد"],
-  ],
-  beds: "الأسرّة",
-  bedText: "سرير مزدوج واحد (160x200 سم)",
-  bedText2: "سريران فرديان (90x200 سم)",
-  sofa: "الأريكة",
-  sofaText: "أريكة سرير (140x180 سم)",
-  noPets: "الحيوانات غير مسموحة",
-  noPetsText: "لا يُسمح بالحيوانات داخل الشقة",
-};
-
-t.uk = {
-  ...t.en,
-  hero: "Чудові апартаменти лише за 80 метрів від Playa del Cura - Torrevieja.",
-  viewGallery: "Переглянути галерею",
-  checkAvailability: "Перевірити доступність",
-  videoTour: "Відеотур",
-  explore: "Дослідіть Casa Hermanos",
-  videoText: "Ознайомтеся з апартаментами, атмосферою пляжу та сучасним інтер’єром перед проживанням.",
-  about: "Про апартаменти",
-  stay: "Комфортне проживання біля моря в Торрев’єсі",
-  aboutText: "Casa Hermanos — це чудові апартаменти лише за 80 метрів від Playa del Cura в Торрев’єсі. Насолоджуйтесь сонцем, пляжем, ресторанами та спокійною атмосферою іспанського узбережжя.",
-  howToBook: "Як забронювати",
-  bookingText: "Оберіть дати заїзду та виїзду, заповніть свої дані та надішліть запит на бронювання прямо з сайту.",
-  fullName: "Повне ім’я",
-  emailAddress: "Електронна адреса",
-  phoneNumber: "Номер телефону",
-  extraMessage: "Додаткове повідомлення",
-  selectDate: "Оберіть дату",
-  acceptedPayments: "Прийняті способи оплати",
-  bankTransfer: "БАНКІВСЬКИЙ ПЕРЕКАЗ",
-  guestReviews: "Відгуки гостей",
-  whatGuestsSay: "Що кажуть гості",
-  leaveReview: "Залишити відгук",
-  shareExperience: "Поділіться своїм досвідом",
-  yourName: "Ваше ім’я",
-  selectRating: "Оберіть оцінку",
-  excellent: "★★★★★ Відмінно",
-  veryGood: "★★★★ Дуже добре",
-  good: "★★★ Добре",
-  fair: "★★ Нормально",
-  poor: "★ Погано",
-  writeExperience: "Напишіть про свій досвід...",
-  submitReview: "Надіслати відгук",
-  guests: ["1 гість", "2 гості", "3 гості", "4 гості", "5 гостей"],
-  weekdays: ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Нд"],
-  features: [
-    ["🌊", "Вид на море", "Гарний вид на море з балкона"],
-    ["❄️", "Кондиціонер", "Кондиціонер доступний"],
-    ["📶", "WiFi", "Безкоштовний WiFi доступний"],
-    ["📺", "Smart TV", "Smart TV доступний"],
-    ["🛏️", "Спальні", "2 спальні"],
-    ["🛁", "Ванна кімната", "1 ванна кімната"],
-  ],
-  beds: "Ліжка",
-  bedText: "1 двоспальне ліжко (160x200 см)",
-  bedText2: "2 односпальні ліжка (90x200 см)",
-  sofa: "Диван",
-  sofaText: "Диван-ліжко (140x180 см)",
-  noPets: "Домашні тварини заборонені",
-  noPetsText: "Тварини не допускаються в апартаменти",
-};
-
-t.pl = {
-  ...t.en,
-  hero: "Piękny apartament tylko 80 metrów od Playa del Cura - Torrevieja.",
-  viewGallery: "Zobacz galerię",
-  checkAvailability: "Sprawdź dostępność",
-  videoTour: "Wideo tour",
-  explore: "Odkryj Casa Hermanos",
-  videoText: "Zobacz apartament, atmosferę plaży i nowoczesne wnętrze przed pobytem.",
-  about: "O apartamencie",
-  stay: "Komfortowy pobyt nad morzem w Torrevieja",
-  aboutText: "Casa Hermanos to piękny apartament położony tylko 80 metrów od Playa del Cura w Torrevieja. Ciesz się słońcem, plażą, restauracjami i spokojną atmosferą hiszpańskiego wybrzeża.",
-  howToBook: "Jak zarezerwować",
-  bookingText: "Wybierz datę przyjazdu i wyjazdu, wpisz swoje dane i wyślij zapytanie rezerwacyjne bezpośrednio ze strony.",
-  fullName: "Imię i nazwisko",
-  emailAddress: "Adres e-mail",
-  phoneNumber: "Numer telefonu",
-  extraMessage: "Dodatkowa wiadomość",
-  selectDate: "Wybierz datę",
-  acceptedPayments: "Akceptowane płatności",
-  bankTransfer: "PRZELEW BANKOWY",
-  guestReviews: "Opinie gości",
-  whatGuestsSay: "Co mówią goście",
-  leaveReview: "Dodaj opinię",
-  shareExperience: "Podziel się swoją opinią",
-  yourName: "Twoje imię",
-  selectRating: "Wybierz ocenę",
-  excellent: "★★★★★ Doskonałe",
-  veryGood: "★★★★ Bardzo dobre",
-  good: "★★★ Dobre",
-  fair: "★★ Przeciętne",
-  poor: "★ Słabe",
-  writeExperience: "Opisz swoje doświadczenie...",
-  submitReview: "Wyślij opinię",
-  guests: ["1 gość", "2 gości", "3 gości", "4 gości", "5 gości"],
-  weekdays: ["Pon", "Wt", "Śr", "Czw", "Pt", "Sob", "Nd"],
-  features: [
-    ["🌊", "Widok na morze", "Piękny widok na morze z balkonu"],
-    ["❄️", "Klimatyzacja", "Klimatyzacja dostępna"],
-    ["📶", "WiFi", "Bezpłatne WiFi dostępne"],
-    ["📺", "Smart TV", "Smart TV dostępny"],
-    ["🛏️", "Sypialnie", "2 sypialnie"],
-    ["🛁", "Łazienka", "1 łazienka"],
-  ],
-  beds: "Łóżka",
-  bedText: "1 łóżko podwójne (160x200 cm)",
-  bedText2: "2 łóżka pojedyncze (90x200 cm)",
-  sofa: "Sofa",
-  sofaText: "Sofa rozkładana (140x180 cm)",
-  noPets: "Zwierzęta niedozwolone",
-  noPetsText: "Zwierzęta nie są dozwolone w apartamencie",
-};
     nl: {
       hero: "Mooi appartement op slechts 80 meter van Playa del Cura - Torrevieja.",
       viewGallery: "Bekijk galerij",
@@ -443,9 +182,7 @@ t.pl = {
         ["★★★★☆", "Heel mooi appartement, geweldige locatie dicht bij het strand en restaurants. We hadden een comfortabel en ontspannen verblijf.", "— Daniel, Duitsland"],
         ["★★★★★", "Uitstekend verblijf. Dicht bij restaurants en slechts 1 minuut van het strand.", "— Sophie, Nederland"],
       ],
-      photoTitles: [
-        "Buitenkant appartement", "Woonkamer", "Zithoek", "Eetkamer", "Eethoek", "Keuken", "Uitzicht appartement", "Slaapkamer 1", "Slaapkamer 2", "Slaapkamerdetails", "Badkamer", "Omgeving", "Strand & boulevard", "Restaurants in de buurt", "Sfeer van Torrevieja"
-      ],
+      photoTitles: ["Appartement", "Woonkamer", "Woonruimte", "Eetkamer", "Eethoek", "Keuken", "Appartement", "Slaapkamer 1", "Slaapkamer 2", "Slaapkamer Details", "Badkamer", "Omgeving", "Omgeving", "Omgeving", "Omgeving"],
     },
 
     es: {
@@ -524,14 +261,408 @@ t.pl = {
         ["★★★★☆", "Apartamento muy bonito, gran ubicación cerca de la playa y restaurantes. Tuvimos una estancia cómoda y relajante.", "— Daniel, Alemania"],
         ["★★★★★", "Estancia excelente. Cerca de restaurantes y a solo 1 minuto de la playa.", "— Sophie, Países Bajos"],
       ],
-      photoTitles: [
-        "Exterior del apartamento", "Sala de estar", "Zona de estar", "Comedor", "Espacio de comedor", "Cocina", "Vista del apartamento", "Dormitorio 1", "Dormitorio 2", "Detalles del dormitorio", "Baño", "Zona cercana", "Playa y paseo marítimo", "Restaurantes cercanos", "Ambiente de Torrevieja"
+      photoTitles: ["Apartamento", "Sala de estar", "Zona de estar", "Comedor", "Espacio comedor", "Cocina", "Apartamento", "Dormitorio 1", "Dormitorio 2", "Detalles dormitorio", "Baño", "Zona cercana", "Zona cercana", "Zona cercana", "Zona cercana"],
+    },
+
+    de: {
+      hero: "Wunderschönes Apartment nur 80 Meter von Playa del Cura - Torrevieja entfernt.",
+      viewGallery: "Galerie ansehen",
+      checkAvailability: "Verfügbarkeit prüfen",
+      videoTour: "Videotour",
+      explore: "Casa Hermanos entdecken",
+      videoText: "Erleben Sie das Apartment, die Strandatmosphäre und das moderne Interieur vor Ihrem Aufenthalt.",
+      about: "Über das Apartment",
+      stay: "Ein komfortabler Aufenthalt am Meer in Torrevieja",
+      aboutText: "Casa Hermanos ist ein wunderschönes Apartment nur 80 Meter von Playa del Cura in Torrevieja entfernt. Genießen Sie Sonne, Strand, Restaurants und die entspannte Atmosphäre der spanischen Küste. Perfekt für Familien, Paare oder Freunde, die einen schönen Urlaub am Meer suchen.",
+      gallery: "Galerie",
+      photoGallery: "Fotogalerie",
+      clickPhoto: "Klicken Sie auf ein Foto, um es im Vollbildmodus zu öffnen",
+      availability: "Verfügbarkeit",
+      howToBook: "So buchen Sie",
+      bookingText: "Wählen Sie Ihr Anreise- und Abreisedatum, geben Sie Ihre Daten ein und senden Sie direkt über die Website eine Buchungsanfrage.",
+      checkIn: "Check-in",
+      checkOut: "Check-out",
+      bookingRequest: "Buchungsanfrage",
+      nights: "Nächte",
+      apartmentPrice: "Apartmentpreis",
+      cleaningFee: "Reinigungskosten",
+      totalPrice: "Gesamtpreis",
+      sendRequest: "Buchungsanfrage senden",
+      success: "Vielen Dank! Ihre Buchungsanfrage wurde erfolgreich gesendet. Wir kontaktieren Sie bald.",
+      selectDate: "Datum auswählen",
+      location: "Standort",
+      locationTitle: "80 Meter von Playa del Cura entfernt",
+      locationText: "Casa Hermanos befindet sich in der Calle Patricio Zammit 6, 03182 Torrevieja, Alicante, Spanien.",
+      contact: "Kontakt",
+      contactTitle: "Fragen zu Casa Hermanos?",
+      contactText: "Für Fragen, Details oder besondere Wünsche kontaktieren Sie uns direkt.",
+      whatsapp: "WhatsApp",
+      email: "E-Mail",
+      acceptedPayments: "Akzeptierte Zahlungsmethoden",
+      bankTransfer: "BANKÜBERWEISUNG",
+      guestReviews: "Gästebewertungen",
+      whatGuestsSay: "Was Gäste sagen",
+      leaveReview: "Bewertung hinterlassen",
+      shareExperience: "Teilen Sie Ihre Erfahrung",
+      yourName: "Ihr Name",
+      selectRating: "Bewertung auswählen",
+      excellent: "★★★★★ Ausgezeichnet",
+      veryGood: "★★★★ Sehr gut",
+      good: "★★★ Gut",
+      fair: "★★ Ausreichend",
+      poor: "★ Schlecht",
+      writeExperience: "Schreiben Sie Ihre Erfahrung...",
+      submitReview: "Bewertung senden",
+      fullName: "Vollständiger Name",
+      emailAddress: "E-Mail-Adresse",
+      phoneNumber: "Telefonnummer",
+      extraMessage: "Zusätzliche Nachricht",
+      guests: ["1 Gast", "2 Gäste", "3 Gäste", "4 Gäste", "5 Gäste"],
+      weekdays: ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"],
+      features: [
+        ["🌊", "Meerblick", "Schöner Meerblick vom Balkon"],
+        ["❄️", "Klimaanlage", "Klimaanlage vorhanden"],
+        ["📶", "WLAN", "Kostenloses WLAN verfügbar"],
+        ["📺", "Smart-TV", "Smart-TV vorhanden"],
+        ["🛏️", "Schlafzimmer", "2 Schlafzimmer"],
+        ["🛁", "Badezimmer", "1 Badezimmer"],
       ],
+      beds: "Betten",
+      bedText: "1 Doppelbett (160x200 cm)",
+      bedText2: "2 Einzelbetten (90x200 cm)",
+      sofa: "Sofa",
+      sofaText: "Schlafsofa (140x180 cm)",
+      noPets: "Keine Haustiere erlaubt",
+      noPetsText: "Tiere sind im Apartment nicht erlaubt",
+      reviews: [
+        ["★★★★★", "Perfekte Lage in Strandnähe. Sehr sauberes Apartment und fantastische Kommunikation.", "— Emma, Schweden"],
+        ["★★★★★", "Wunderschönes Apartment und modernes Interieur. Wir haben unseren Aufenthalt sehr genossen.", "— Carlos, Spanien"],
+        ["★★★★☆", "Sehr schönes Apartment, tolle Lage in der Nähe des Strandes und der Restaurants. Wir hatten einen komfortablen und erholsamen Aufenthalt.", "— Daniel, Deutschland"],
+        ["★★★★★", "Ausgezeichneter Aufenthalt. In der Nähe von Restaurants und nur 1 Minute vom Strand entfernt.", "— Sophie, Niederlande"],
+      ],
+      photoTitles: ["Apartment", "Wohnzimmer", "Wohnbereich", "Esszimmer", "Essbereich", "Küche", "Apartment", "Schlafzimmer 1", "Schlafzimmer 2", "Schlafzimmer Details", "Badezimmer", "Umgebung", "Umgebung", "Umgebung", "Umgebung"],
+    },
+
+    sv: {
+      hero: "Vacker lägenhet bara 80 meter från Playa del Cura - Torrevieja.",
+      viewGallery: "Visa galleri",
+      checkAvailability: "Kontrollera tillgänglighet",
+      videoTour: "Videotur",
+      explore: "Utforska Casa Hermanos",
+      videoText: "Upplev lägenheten, strandkänslan och den moderna interiören före din vistelse.",
+      about: "Om lägenheten",
+      stay: "En bekväm vistelse vid havet i Torrevieja",
+      aboutText: "Casa Hermanos är en vacker lägenhet bara 80 meter från Playa del Cura i Torrevieja. Njut av solen, stranden, restaurangerna och den avslappnade atmosfären vid den spanska kusten. Perfekt för familjer, par eller vänner som söker en härlig semester nära havet.",
+      gallery: "Galleri",
+      photoGallery: "Fotogalleri",
+      clickPhoto: "Klicka på en bild för att öppna i helskärm",
+      availability: "Tillgänglighet",
+      howToBook: "Så bokar du",
+      bookingText: "Välj in- och utcheckningsdatum, fyll i dina uppgifter och skicka en bokningsförfrågan direkt från webbplatsen.",
+      checkIn: "Incheckning",
+      checkOut: "Utcheckning",
+      bookingRequest: "Bokningsförfrågan",
+      nights: "Nätter",
+      apartmentPrice: "Lägenhetspris",
+      cleaningFee: "Städavgift",
+      totalPrice: "Totalpris",
+      sendRequest: "Skicka bokningsförfrågan",
+      success: "Tack! Din bokningsförfrågan har skickats. Vi kontaktar dig snart.",
+      selectDate: "Välj datum",
+      location: "Plats",
+      locationTitle: "80 meter från Playa del Cura",
+      locationText: "Casa Hermanos ligger på Calle Patricio Zammit 6, 03182 Torrevieja, Alicante, Spanien.",
+      contact: "Kontakt",
+      contactTitle: "Frågor om Casa Hermanos?",
+      contactText: "För frågor, detaljer eller särskilda önskemål, kontakta oss direkt.",
+      whatsapp: "WhatsApp",
+      email: "E-post",
+      acceptedPayments: "Accepterade betalningar",
+      bankTransfer: "BANKÖVERFÖRING",
+      guestReviews: "Gästrecensioner",
+      whatGuestsSay: "Vad gäster säger",
+      leaveReview: "Lämna en recension",
+      shareExperience: "Dela din upplevelse",
+      yourName: "Ditt namn",
+      selectRating: "Välj betyg",
+      excellent: "★★★★★ Utmärkt",
+      veryGood: "★★★★ Mycket bra",
+      good: "★★★ Bra",
+      fair: "★★ Okej",
+      poor: "★ Dåligt",
+      writeExperience: "Skriv din upplevelse...",
+      submitReview: "Skicka recension",
+      fullName: "Fullständigt namn",
+      emailAddress: "E-postadress",
+      phoneNumber: "Telefonnummer",
+      extraMessage: "Extra meddelande",
+      guests: ["1 gäst", "2 gäster", "3 gäster", "4 gäster", "5 gäster"],
+      weekdays: ["Mån", "Tis", "Ons", "Tor", "Fre", "Lör", "Sön"],
+      features: [
+        ["🌊", "Havsutsikt", "Vacker havsutsikt från balkongen"],
+        ["❄️", "Luftkonditionering", "Luftkonditionering finns"],
+        ["📶", "WiFi", "Gratis WiFi finns"],
+        ["📺", "Smart-TV", "Smart-TV finns"],
+        ["🛏️", "Sovrum", "2 sovrum"],
+        ["🛁", "Badrum", "1 badrum"],
+      ],
+      beds: "Sängar",
+      bedText: "1 dubbelsäng (160x200 cm)",
+      bedText2: "2 enkelsängar (90x200 cm)",
+      sofa: "Soffa",
+      sofaText: "Bäddsoffa (140x180 cm)",
+      noPets: "Husdjur ej tillåtna",
+      noPetsText: "Djur är inte tillåtna i lägenheten",
+      reviews: [
+        ["★★★★★", "Perfekt läge nära stranden. Mycket ren lägenhet och fantastisk kommunikation.", "— Emma, Sverige"],
+        ["★★★★★", "Vacker lägenhet och modern interiör. Vi älskade att bo här.", "— Carlos, Spanien"],
+        ["★★★★☆", "Mycket fin lägenhet, bra läge nära stranden och restauranger. Vi hade en bekväm och avkopplande vistelse.", "— Daniel, Tyskland"],
+        ["★★★★★", "Utmärkt vistelse. Nära restauranger och bara 1 minut från stranden.", "— Sophie, Nederländerna"],
+      ],
+      photoTitles: ["Lägenhet", "Vardagsrum", "Vardagsrum", "Matsal", "Matplats", "Kök", "Lägenhet", "Sovrum 1", "Sovrum 2", "Sovrumsdetaljer", "Badrum", "Närområde", "Närområde", "Närområde", "Närområde"],
+    },
+
+    ar: {
+      hero: "شقة جميلة على بعد 80 مترًا فقط من Playa del Cura - Torrevieja.",
+      viewGallery: "عرض المعرض",
+      checkAvailability: "تحقق من التوفر",
+      videoTour: "جولة بالفيديو",
+      explore: "استكشف Casa Hermanos",
+      videoText: "شاهد الشقة وأجواء الشاطئ والتصميم الداخلي الحديث قبل إقامتك.",
+      about: "عن الشقة",
+      stay: "إقامة مريحة بجانب البحر في توريفايجا",
+      aboutText: "Casa Hermanos شقة جميلة تقع على بعد 80 مترًا فقط من Playa del Cura في توريفايجا. استمتع بالشمس والشاطئ والمطاعم والأجواء الهادئة على الساحل الإسباني. مثالية للعائلات أو الأزواج أو الأصدقاء الذين يبحثون عن عطلة رائعة بالقرب من البحر.",
+      gallery: "المعرض",
+      photoGallery: "معرض الصور",
+      clickPhoto: "اضغط على أي صورة لفتحها بملء الشاشة",
+      availability: "التوفر",
+      howToBook: "طريقة الحجز",
+      bookingText: "اختر تاريخ الوصول والمغادرة، املأ بياناتك، وأرسل طلب الحجز مباشرة من الموقع.",
+      checkIn: "تسجيل الوصول",
+      checkOut: "تسجيل المغادرة",
+      bookingRequest: "طلب الحجز",
+      nights: "الليالي",
+      apartmentPrice: "سعر الشقة",
+      cleaningFee: "رسوم التنظيف",
+      totalPrice: "السعر الإجمالي",
+      sendRequest: "إرسال طلب الحجز",
+      success: "شكرًا لك! تم إرسال طلب الحجز بنجاح. سنتواصل معك قريبًا.",
+      selectDate: "اختر التاريخ",
+      location: "الموقع",
+      locationTitle: "80 مترًا من Playa del Cura",
+      locationText: "يقع Casa Hermanos في Calle Patricio Zammit 6، 03182 Torrevieja، Alicante، Spain.",
+      contact: "اتصال",
+      contactTitle: "هل لديك أسئلة حول Casa Hermanos؟",
+      contactText: "للاستفسارات أو التفاصيل أو الطلبات الخاصة، تواصل معنا مباشرة.",
+      whatsapp: "واتساب",
+      email: "البريد الإلكتروني",
+      acceptedPayments: "طرق الدفع المقبولة",
+      bankTransfer: "تحويل بنكي",
+      guestReviews: "آراء الضيوف",
+      whatGuestsSay: "ماذا يقول الضيوف",
+      leaveReview: "اترك تقييمًا",
+      shareExperience: "شارك تجربتك",
+      yourName: "اسمك",
+      selectRating: "اختر التقييم",
+      excellent: "★★★★★ ممتاز",
+      veryGood: "★★★★ جيد جدًا",
+      good: "★★★ جيد",
+      fair: "★★ مقبول",
+      poor: "★ سيئ",
+      writeExperience: "اكتب تجربتك...",
+      submitReview: "إرسال التقييم",
+      fullName: "الاسم الكامل",
+      emailAddress: "البريد الإلكتروني",
+      phoneNumber: "رقم الهاتف",
+      extraMessage: "رسالة إضافية",
+      guests: ["ضيف واحد", "ضيفان", "3 ضيوف", "4 ضيوف", "5 ضيوف"],
+      weekdays: ["الإثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "الأحد"],
+      features: [
+        ["🌊", "إطلالة على البحر", "إطلالة جميلة على البحر من الشرفة"],
+        ["❄️", "تكييف", "يتوفر تكييف هواء"],
+        ["📶", "واي فاي", "واي فاي مجاني متوفر"],
+        ["📺", "تلفاز ذكي", "تلفاز ذكي متوفر"],
+        ["🛏️", "غرف النوم", "غرفتا نوم"],
+        ["🛁", "حمام", "حمام واحد"],
+      ],
+      beds: "الأسرّة",
+      bedText: "سرير مزدوج واحد (160x200 سم)",
+      bedText2: "سريران فرديان (90x200 سم)",
+      sofa: "الأريكة",
+      sofaText: "أريكة سرير (140x180 سم)",
+      noPets: "الحيوانات غير مسموحة",
+      noPetsText: "لا يُسمح بالحيوانات داخل الشقة",
+      reviews: [
+        ["★★★★★", "موقع مثالي بالقرب من الشاطئ. الشقة نظيفة جدًا والتواصل ممتاز.", "— إيما، السويد"],
+        ["★★★★★", "شقة جميلة وتصميم داخلي حديث. أحببنا الإقامة هنا.", "— كارلوس، إسبانيا"],
+        ["★★★★☆", "شقة جميلة جدًا وموقع رائع قريب من الشاطئ والمطاعم. كانت إقامتنا مريحة وهادئة.", "— دانيال، ألمانيا"],
+        ["★★★★★", "إقامة ممتازة. قريبة من المطاعم وعلى بعد دقيقة واحدة فقط من الشاطئ.", "— صوفي، هولندا"],
+      ],
+      photoTitles: ["شقة", "غرفة المعيشة", "منطقة المعيشة", "غرفة الطعام", "منطقة الطعام", "المطبخ", "شقة", "غرفة النوم 1", "غرفة النوم 2", "تفاصيل الغرفة", "الحمام", "المنطقة القريبة", "المنطقة القريبة", "المنطقة القريبة", "المنطقة القريبة"],
+    },
+
+    uk: {
+      hero: "Чудові апартаменти лише за 80 метрів від Playa del Cura - Torrevieja.",
+      viewGallery: "Переглянути галерею",
+      checkAvailability: "Перевірити доступність",
+      videoTour: "Відеотур",
+      explore: "Дослідіть Casa Hermanos",
+      videoText: "Ознайомтеся з апартаментами, атмосферою пляжу та сучасним інтер’єром перед проживанням.",
+      about: "Про апартаменти",
+      stay: "Комфортне проживання біля моря в Торрев’єсі",
+      aboutText: "Casa Hermanos — це чудові апартаменти лише за 80 метрів від Playa del Cura в Торрев’єсі. Насолоджуйтесь сонцем, пляжем, ресторанами та спокійною атмосферою іспанського узбережжя.",
+      gallery: "Галерея",
+      photoGallery: "Фотогалерея",
+      clickPhoto: "Натисніть на будь-яке фото, щоб відкрити на весь екран",
+      availability: "Доступність",
+      howToBook: "Як забронювати",
+      bookingText: "Оберіть дати заїзду та виїзду, заповніть свої дані та надішліть запит на бронювання прямо з сайту.",
+      checkIn: "Заїзд",
+      checkOut: "Виїзд",
+      bookingRequest: "Запит на бронювання",
+      nights: "Ночі",
+      apartmentPrice: "Ціна апартаментів",
+      cleaningFee: "Прибирання",
+      totalPrice: "Загальна ціна",
+      sendRequest: "Надіслати запит",
+      success: "Дякуємо! Ваш запит на бронювання успішно надіслано. Ми скоро зв’яжемося з вами.",
+      selectDate: "Оберіть дату",
+      location: "Локація",
+      locationTitle: "80 метрів від Playa del Cura",
+      locationText: "Casa Hermanos знаходиться за адресою Calle Patricio Zammit 6, 03182 Torrevieja, Alicante, Spain.",
+      contact: "Контакт",
+      contactTitle: "Питання про Casa Hermanos?",
+      contactText: "Для питань, деталей або спеціальних запитів зв’яжіться з нами напряму.",
+      whatsapp: "WhatsApp",
+      email: "Електронна пошта",
+      acceptedPayments: "Прийняті способи оплати",
+      bankTransfer: "БАНКІВСЬКИЙ ПЕРЕКАЗ",
+      guestReviews: "Відгуки гостей",
+      whatGuestsSay: "Що кажуть гості",
+      leaveReview: "Залишити відгук",
+      shareExperience: "Поділіться своїм досвідом",
+      yourName: "Ваше ім’я",
+      selectRating: "Оберіть оцінку",
+      excellent: "★★★★★ Відмінно",
+      veryGood: "★★★★ Дуже добре",
+      good: "★★★ Добре",
+      fair: "★★ Нормально",
+      poor: "★ Погано",
+      writeExperience: "Напишіть про свій досвід...",
+      submitReview: "Надіслати відгук",
+      fullName: "Повне ім’я",
+      emailAddress: "Електронна адреса",
+      phoneNumber: "Номер телефону",
+      extraMessage: "Додаткове повідомлення",
+      guests: ["1 гість", "2 гості", "3 гості", "4 гості", "5 гостей"],
+      weekdays: ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Нд"],
+      features: [
+        ["🌊", "Вид на море", "Гарний вид на море з балкона"],
+        ["❄️", "Кондиціонер", "Кондиціонер доступний"],
+        ["📶", "WiFi", "Безкоштовний WiFi доступний"],
+        ["📺", "Smart TV", "Smart TV доступний"],
+        ["🛏️", "Спальні", "2 спальні"],
+        ["🛁", "Ванна кімната", "1 ванна кімната"],
+      ],
+      beds: "Ліжка",
+      bedText: "1 двоспальне ліжко (160x200 см)",
+      bedText2: "2 односпальні ліжка (90x200 см)",
+      sofa: "Диван",
+      sofaText: "Диван-ліжко (140x180 см)",
+      noPets: "Домашні тварини заборонені",
+      noPetsText: "Тварини не допускаються в апартаменти",
+      reviews: [
+        ["★★★★★", "Ідеальне розташування біля пляжу. Дуже чисті апартаменти та чудова комунікація.", "— Емма, Швеція"],
+        ["★★★★★", "Гарні апартаменти та сучасний інтер’єр. Нам дуже сподобалось тут проживати.", "— Карлос, Іспанія"],
+        ["★★★★☆", "Дуже гарні апартаменти, чудове розташування поруч із пляжем і ресторанами.", "— Даніель, Німеччина"],
+        ["★★★★★", "Відмінне проживання. Поруч ресторани та лише 1 хвилина до пляжу.", "— Софі, Нідерланди"],
+      ],
+      photoTitles: ["Апартаменти", "Вітальня", "Житлова зона", "Їдальня", "Обідня зона", "Кухня", "Апартаменти", "Спальня 1", "Спальня 2", "Деталі спальні", "Ванна кімната", "Поруч", "Поруч", "Поруч", "Поруч"],
+    },
+
+    pl: {
+      hero: "Piękny apartament tylko 80 metrów od Playa del Cura - Torrevieja.",
+      viewGallery: "Zobacz galerię",
+      checkAvailability: "Sprawdź dostępność",
+      videoTour: "Wideo tour",
+      explore: "Odkryj Casa Hermanos",
+      videoText: "Zobacz apartament, atmosferę plaży i nowoczesne wnętrze przed pobytem.",
+      about: "O apartamencie",
+      stay: "Komfortowy pobyt nad morzem w Torrevieja",
+      aboutText: "Casa Hermanos to piękny apartament położony tylko 80 metrów od Playa del Cura w Torrevieja. Ciesz się słońcem, plażą, restauracjami i spokojną atmosferą hiszpańskiego wybrzeża.",
+      gallery: "Galeria",
+      photoGallery: "Galeria zdjęć",
+      clickPhoto: "Kliknij dowolne zdjęcie, aby otworzyć pełny ekran",
+      availability: "Dostępność",
+      howToBook: "Jak zarezerwować",
+      bookingText: "Wybierz datę przyjazdu i wyjazdu, wpisz swoje dane i wyślij zapytanie rezerwacyjne bezpośrednio ze strony.",
+      checkIn: "Zameldowanie",
+      checkOut: "Wymeldowanie",
+      bookingRequest: "Zapytanie o rezerwację",
+      nights: "Noce",
+      apartmentPrice: "Cena apartamentu",
+      cleaningFee: "Opłata za sprzątanie",
+      totalPrice: "Cena całkowita",
+      sendRequest: "Wyślij zapytanie",
+      success: "Dziękujemy! Twoje zapytanie zostało wysłane. Skontaktujemy się wkrótce.",
+      selectDate: "Wybierz datę",
+      location: "Lokalizacja",
+      locationTitle: "80 metrów od Playa del Cura",
+      locationText: "Casa Hermanos znajduje się przy Calle Patricio Zammit 6, 03182 Torrevieja, Alicante, Spain.",
+      contact: "Kontakt",
+      contactTitle: "Pytania o Casa Hermanos?",
+      contactText: "W przypadku pytań, szczegółów lub specjalnych próśb skontaktuj się z nami bezpośrednio.",
+      whatsapp: "WhatsApp",
+      email: "E-mail",
+      acceptedPayments: "Akceptowane płatności",
+      bankTransfer: "PRZELEW BANKOWY",
+      guestReviews: "Opinie gości",
+      whatGuestsSay: "Co mówią goście",
+      leaveReview: "Dodaj opinię",
+      shareExperience: "Podziel się swoją opinią",
+      yourName: "Twoje imię",
+      selectRating: "Wybierz ocenę",
+      excellent: "★★★★★ Doskonałe",
+      veryGood: "★★★★ Bardzo dobre",
+      good: "★★★ Dobre",
+      fair: "★★ Przeciętne",
+      poor: "★ Słabe",
+      writeExperience: "Opisz swoje doświadczenie...",
+      submitReview: "Wyślij opinię",
+      fullName: "Imię i nazwisko",
+      emailAddress: "Adres e-mail",
+      phoneNumber: "Numer telefonu",
+      extraMessage: "Dodatkowa wiadomość",
+      guests: ["1 gość", "2 gości", "3 gości", "4 gości", "5 gości"],
+      weekdays: ["Pon", "Wt", "Śr", "Czw", "Pt", "Sob", "Nd"],
+      features: [
+        ["🌊", "Widok na morze", "Piękny widok na morze z balkonu"],
+        ["❄️", "Klimatyzacja", "Klimatyzacja dostępna"],
+        ["📶", "WiFi", "Bezpłatne WiFi dostępne"],
+        ["📺", "Smart TV", "Smart TV dostępny"],
+        ["🛏️", "Sypialnie", "2 sypialnie"],
+        ["🛁", "Łazienka", "1 łazienka"],
+      ],
+      beds: "Łóżka",
+      bedText: "1 łóżko podwójne (160x200 cm)",
+      bedText2: "2 łóżka pojedyncze (90x200 cm)",
+      sofa: "Sofa",
+      sofaText: "Sofa rozkładana (140x180 cm)",
+      noPets: "Zwierzęta niedozwolone",
+      noPetsText: "Zwierzęta nie są dozwolone w apartamencie",
+      reviews: [
+        ["★★★★★", "Idealna lokalizacja blisko plaży. Bardzo czysty apartament i świetna komunikacja.", "— Emma, Szwecja"],
+        ["★★★★★", "Piękny apartament i nowoczesne wnętrze. Bardzo nam się podobało.", "— Carlos, Hiszpania"],
+        ["★★★★☆", "Bardzo ładny apartament, świetna lokalizacja blisko plaży i restauracji.", "— Daniel, Niemcy"],
+        ["★★★★★", "Doskonały pobyt. Blisko restauracji i tylko 1 minuta od plaży.", "— Sophie, Holandia"],
+      ],
+      photoTitles: ["Apartament", "Salon", "Strefa wypoczynku", "Jadalnia", "Miejsce do jedzenia", "Kuchnia", "Apartament", "Sypialnia 1", "Sypialnia 2", "Szczegóły sypialni", "Łazienka", "Okolica", "Okolica", "Okolica", "Okolica"],
     },
   };
-const tr = t[language];
-const isRTL = language === "ar";
-  
+
+  const tr = t[language];
+  const isRTL = language === "ar";
+
   const monthName = currentDate.toLocaleString(locales[language], {
     month: "long",
     year: "numeric",
@@ -769,15 +900,9 @@ const isRTL = language === "ar";
       <section className="bg-black py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-amber-400 uppercase tracking-[0.25em] text-sm mb-4">
-              {tr.videoTour}
-            </p>
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-5">
-              {tr.explore}
-            </h2>
-            <p className="text-stone-400 text-lg max-w-2xl mx-auto leading-8">
-              {tr.videoText}
-            </p>
+            <p className="text-amber-400 uppercase tracking-[0.25em] text-sm mb-4">{tr.videoTour}</p>
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-5">{tr.explore}</h2>
+            <p className="text-stone-400 text-lg max-w-2xl mx-auto leading-8">{tr.videoText}</p>
           </div>
 
           <div className="relative rounded-[2rem] overflow-hidden border border-white/10 shadow-[0_25px_80px_rgba(0,0,0,0.45)]">
@@ -877,9 +1002,7 @@ const isRTL = language === "ar";
               </div>
 
               <div className="grid grid-cols-7 gap-2 text-center text-xs md:text-sm font-bold text-stone-400 mb-3 uppercase tracking-wide">
-                {tr.weekdays.map((day) => (
-                  <div key={day}>{day}</div>
-                ))}
+                {tr.weekdays.map((day) => <div key={day}>{day}</div>)}
               </div>
 
               <div className="grid grid-cols-7 gap-2">
@@ -940,9 +1063,7 @@ const isRTL = language === "ar";
                 <input type="tel" placeholder={tr.phoneNumber} value={bookingForm.phone} onChange={(e) => setBookingForm({ ...bookingForm, phone: e.target.value })} className="w-full rounded-2xl px-4 py-3 text-stone-900 outline-none bg-white" />
 
                 <select value={bookingForm.guests} onChange={(e) => setBookingForm({ ...bookingForm, guests: e.target.value })} className="w-full rounded-2xl px-4 py-3 text-stone-900 outline-none bg-white">
-                  {tr.guests.map((guest, index) => (
-                    <option key={index} value={String(index + 1)}>{guest}</option>
-                  ))}
+                  {tr.guests.map((guest, index) => <option key={index} value={String(index + 1)}>{guest}</option>)}
                 </select>
 
                 <textarea placeholder={tr.extraMessage} value={bookingForm.message} onChange={(e) => setBookingForm({ ...bookingForm, message: e.target.value })} className="w-full rounded-2xl px-4 py-3 text-stone-900 outline-none bg-white min-h-[110px]" />
@@ -953,22 +1074,14 @@ const isRTL = language === "ar";
               </form>
 
               <div className="mt-6 bg-white/5 border border-white/10 rounded-2xl p-5">
-                <p className="text-sm uppercase tracking-[0.25em] text-stone-400 mb-5">
-                  {tr.acceptedPayments}
-                </p>
+                <p className="text-sm uppercase tracking-[0.25em] text-stone-400 mb-5">{tr.acceptedPayments}</p>
 
                 <div className="flex flex-wrap items-center gap-4">
                   <div className="bg-white rounded-2xl px-6 py-4">
                     <img src="https://cdn-icons-png.flaticon.com/512/349/349221.png" alt="Visa" className="h-8 object-contain" />
                   </div>
-
-                  <div className="bg-white rounded-2xl px-6 py-4 text-black font-bold text-lg tracking-wide">
-                    WERO
-                  </div>
-
-                  <div className="bg-white rounded-2xl px-6 py-4 text-black font-bold text-sm tracking-wide">
-                    {tr.bankTransfer}
-                  </div>
+                  <div className="bg-white rounded-2xl px-6 py-4 text-black font-bold text-lg tracking-wide">WERO</div>
+                  <div className="bg-white rounded-2xl px-6 py-4 text-black font-bold text-sm tracking-wide">{tr.bankTransfer}</div>
                 </div>
               </div>
 
@@ -987,9 +1100,7 @@ const isRTL = language === "ar";
           <div>
             <p className="text-sm font-semibold tracking-[0.25em] uppercase text-amber-700 mb-4">{tr.location}</p>
             <h2 className="text-4xl md:text-5xl font-bold mb-7">{tr.locationTitle}</h2>
-            <p className="text-lg text-stone-600 leading-9 mb-8">
-              {tr.locationText}
-            </p>
+            <p className="text-lg text-stone-600 leading-9 mb-8">{tr.locationText}</p>
           </div>
 
           <div className="rounded-[2rem] overflow-hidden shadow-[0_25px_80px_rgba(0,0,0,0.12)] w-full bg-stone-100 border border-stone-100">
@@ -1007,43 +1118,27 @@ const isRTL = language === "ar";
           <p className="text-xl text-stone-300 mb-10 max-w-2xl mx-auto leading-8">{tr.contactText}</p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
-            <a href="https://wa.me/31639315783" className="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-600 transition px-9 py-4 rounded-full text-lg font-bold shadow-lg">
-              {tr.whatsapp}
-            </a>
-            <a href="mailto:manios-13@hotmail.com" className="w-full sm:w-auto bg-white text-stone-950 hover:bg-stone-200 transition px-9 py-4 rounded-full text-lg font-bold shadow-lg">
-              {tr.email}
-            </a>
+            <a href="https://wa.me/31639315783" className="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-600 transition px-9 py-4 rounded-full text-lg font-bold shadow-lg">{tr.whatsapp}</a>
+            <a href="mailto:manios-13@hotmail.com" className="w-full sm:w-auto bg-white text-stone-950 hover:bg-stone-200 transition px-9 py-4 rounded-full text-lg font-bold shadow-lg">{tr.email}</a>
           </div>
 
           <div className="mt-24">
-            <p className="text-sm font-semibold tracking-[0.25em] uppercase text-amber-500 mb-4">
-              {tr.guestReviews}
-            </p>
-
-            <h2 className="text-4xl md:text-5xl font-bold mb-12">
-              {tr.whatGuestsSay}
-            </h2>
+            <p className="text-sm font-semibold tracking-[0.25em] uppercase text-amber-500 mb-4">{tr.guestReviews}</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-12">{tr.whatGuestsSay}</h2>
 
             <div className="grid md:grid-cols-3 gap-6">
               {tr.reviews.map((review, index) => (
                 <div key={index} className="bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur">
                   <div className="text-yellow-400 text-2xl mb-4">{review[0]}</div>
-                  <p className="text-stone-300 leading-7 mb-6">
-                    “{review[1]}”
-                  </p>
+                  <p className="text-stone-300 leading-7 mb-6">“{review[1]}”</p>
                   <div className="font-bold text-white">{review[2]}</div>
                 </div>
               ))}
             </div>
 
             <div className="mt-24">
-              <p className="text-sm font-semibold tracking-[0.25em] uppercase text-amber-500 mb-4">
-                {tr.leaveReview}
-              </p>
-
-              <h2 className="text-4xl md:text-5xl font-bold mb-10">
-                {tr.shareExperience}
-              </h2>
+              <p className="text-sm font-semibold tracking-[0.25em] uppercase text-amber-500 mb-4">{tr.leaveReview}</p>
+              <h2 className="text-4xl md:text-5xl font-bold mb-10">{tr.shareExperience}</h2>
 
               <form action="https://formspree.io/f/mredkzvo" method="POST" className="max-w-3xl mx-auto space-y-5">
                 <input type="text" name="review_name" placeholder={tr.yourName} className="w-full rounded-2xl px-5 py-4 text-stone-900 bg-white border border-stone-200 outline-none" required />
