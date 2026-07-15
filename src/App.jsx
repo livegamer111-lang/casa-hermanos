@@ -102,6 +102,7 @@ export default function App() {
         ["★★★★★", "Beautiful apartment and modern interior. We loved staying here.", "— Carlos, Spain"],
         ["★★★★☆", "Very nice apartment, great location close to the beach and restaurants. We had a comfortable and relaxing stay.", "— Daniel, Germany"],
         ["★★★★★", "Excellent stay. Close to restaurants and only 1 minute from the beach.", "— Sophie, Netherlands"],
+        ["★★★★★", "Top Lage. Direkt am Strand. Direkt bei den Restaurants. Ruhige gegend. Was will man mehr!.", "— Roberto,"],
       ],
       photoTitles: ["Apartment", "Living Room", "Living Area", "Dining Room", "Dining Space", "Kitchen", "Apartment", "Bedroom 1", "Bedroom 2", "Bedroom Details", "Bathroom", "Nearby Area", "Nearby Area", "Nearby Area", "Nearby Area"],
     },
